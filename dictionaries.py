@@ -38,3 +38,12 @@ unpack(*dictionary)
 ('b', 'x', 'a', 'y')
 {}
 """
+#Girdi
+sozluk = {"İsim":"Enes"}
+# Çıktı
+{"İsim":"Enes"}
+#Girdi
+yenisim = "Mazlum"
+sozluk.setdefault("İsim", []).append(yenisim)
+#Çıktı
+{"İsim":"Mazlum,Enes"}
